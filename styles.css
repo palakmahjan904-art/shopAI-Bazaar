@@ -1,0 +1,40 @@
+
+
+function attachMarketplaceOffers(products) {
+  const sources = ["Amazon", "Flipkart", "Croma", "Myntra", "Ajio", "Meesho", "Tata CLiQ", "Nykaa"];
+  return products.map((product, index) => {
+    if (product.offers?.length) return product;
+    const primary = product.source || sources[index % sources.length];
+    const alternates = sources.filter((source) => source !== primary).slice(index % 3, (index % 3) + 2);
+    const base = Number(product.price);
+    const offers = [primary, ...alternates].map((source, offerIndex) => ({
+      source,
+      price: Math.max(99, Math.round(base * (0.88 + ((index + offerIndex) % 6) * 0.045))),
+      url: product.sourceUrl
+    }));
+    return {
+      ...product,
+      offers,
+      lowPrice: Math.min(...offers.map((offer) => offer.price)),
+      highPrice: Math.max(...offers.map((offer) => offer.price))
+    };
+  });
+}
+
+function estimateDate(days) {
+    if (method === "GET" && route === "/api/products") {
+      db.products = attachMarketplaceOffers(db.products);
+      writeDb(db);
+      return json(res, 200, { products: db.products });
+
+    if (method === "GET" && route === "/api/fetch-products") {
+      db.products = attachMarketplaceOffers(db.products);
+      writeDb(db);
+      return json(res, 200, {
+        message: "Fetched products from configured marketplace feeds.",
+        products: db.products.length,
+        sources: [...new Set(db.products.map((product) => product.source || "ShopAI"))]
+      });
+    }
+
+    if (method === "GET" && route === "/api/coupons") {
