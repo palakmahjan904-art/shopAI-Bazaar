@@ -1,40 +1,137 @@
 
+.secondary-btn,
+.danger-btn,
+.ghost-btn,
+.secondary-btn,
+.danger-btn,
+.ghost-btn,
 
-function attachMarketplaceOffers(products) {
-  const sources = ["Amazon", "Flipkart", "Croma", "Myntra", "Ajio", "Meesho", "Tata CLiQ", "Nykaa"];
-  return products.map((product, index) => {
-    if (product.offers?.length) return product;
-    const primary = product.source || sources[index % sources.length];
-    const alternates = sources.filter((source) => source !== primary).slice(index % 3, (index % 3) + 2);
-    const base = Number(product.price);
-    const offers = [primary, ...alternates].map((source, offerIndex) => ({
-      source,
-      price: Math.max(99, Math.round(base * (0.88 + ((index + offerIndex) % 6) * 0.045))),
-      url: product.sourceUrl
-    }));
-    return {
-      ...product,
-      offers,
-      lowPrice: Math.min(...offers.map((offer) => offer.price)),
-      highPrice: Math.max(...offers.map((offer) => offer.price))
-    };
-  });
+.danger-btn {
+  color: #b42318;
+  border-color: rgba(207, 46, 46, 0.28);
+  background: rgba(207, 46, 46, 0.08);
 }
 
-function estimateDate(days) {
-    if (method === "GET" && route === "/api/products") {
-      db.products = attachMarketplaceOffers(db.products);
-      writeDb(db);
-      return json(res, 200, { products: db.products });
+.danger-btn .icon {
+  color: #cf2e2e;
+}
 
-    if (method === "GET" && route === "/api/fetch-products") {
-      db.products = attachMarketplaceOffers(db.products);
-      writeDb(db);
-      return json(res, 200, {
-        message: "Fetched products from configured marketplace feeds.",
-        products: db.products.length,
-        sources: [...new Set(db.products.map((product) => product.source || "ShopAI"))]
-      });
-    }
+.ghost-btn {
+.secondary-btn:hover,
+.danger-btn:hover,
+.ghost-btn:hover,
+.summary-box,
+.tracking-card {
+.tracking-card,
+.wishlist-card {
+  border: 1px solid var(--line);
 
-    if (method === "GET" && route === "/api/coupons") {
+.profile-wishlist-card {
+  grid-column: 1 / -1;
+}
+
+.wishlist-head {
+  align-items: start;
+  margin-bottom: 1rem;
+}
+
+.wishlist-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.wishlist-card {
+  display: grid;
+  grid-template-columns: 160px minmax(0, 1fr);
+  overflow: hidden;
+  transition: transform 0.22s ease, box-shadow 0.22s ease, border-color 0.22s ease;
+}
+
+.wishlist-card:hover {
+  transform: translateY(-4px);
+  border-color: rgba(255, 122, 0, 0.35);
+  box-shadow: 0 22px 58px rgba(30, 41, 59, 0.2);
+}
+
+.wishlist-card img {
+  width: 100%;
+  height: 100%;
+  min-height: 190px;
+  object-fit: cover;
+  background: #e5e7eb;
+}
+
+.wishlist-card-body {
+  display: grid;
+  gap: 0.65rem;
+  align-content: start;
+  padding: 1rem;
+}
+
+.wishlist-card-body h3 {
+  margin: 0;
+  font-size: 1.05rem;
+}
+
+.wishlist-card-body p {
+  margin: 0;
+}
+
+.wishlist-actions {
+  display: flex;
+  gap: 0.55rem;
+  flex-wrap: wrap;
+  margin-top: 0.2rem;
+}
+
+.wishlist-empty {
+  min-height: 320px;
+  display: grid;
+  place-items: center;
+  align-content: center;
+  gap: 0.75rem;
+  text-align: center;
+  padding: 2rem;
+  border: 1px dashed var(--line);
+  border-radius: 0.75rem;
+  background: var(--panel);
+}
+
+.empty-icon {
+  display: grid;
+  place-items: center;
+  width: 4rem;
+  height: 4rem;
+  border-radius: 999px;
+  color: #d51f5c;
+  background: rgba(213, 31, 92, 0.12);
+}
+
+.empty-icon .icon {
+  width: 1.8rem;
+  height: 1.8rem;
+  fill: currentColor;
+}
+
+.auth-card,
+  .checkout-grid,
+  .profile-grid {
+  .profile-grid,
+  .wishlist-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .wishlist-card {
+    grid-template-columns: 1fr;
+  }
+
+  .wishlist-card img {
+    aspect-ratio: 4 / 3;
+    min-height: 0;
+  }
+
+  .wishlist-actions > * {
+    flex: 1 1 100%;
+  }
+}
