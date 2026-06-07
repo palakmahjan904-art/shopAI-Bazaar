@@ -776,8 +776,11 @@ function setupSearchTools() {
 // }
 
 async function loadProducts() {
-  state.products = [];
-  state.coupons = [];
+  const response = await fetch("/db.json");
+  const db = await response.json();
+
+  state.products = db.products || [];
+  state.coupons = db.coupons || [];
 
   renderCategories();
   renderStores();
