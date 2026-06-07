@@ -1,0 +1,17 @@
+{
+  "products": [
+    {
+      "id": "1",
+      "name": "iPhone 15",
+      "category": "Mobiles",
+      "price": 69999,
+      "mrp": 79999,
+      "stock": 10,
+      "rating": 4.5,
+      "source": "Amazon",
+      "description": "Apple iPhone 15",
+      "image": "https://via.placeholder.com/300",
+      "tags": ["mobile"]
+    }
+  ]
+}
