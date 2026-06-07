@@ -764,10 +764,21 @@ function setupSearchTools() {
   });
 }
 
+// async function loadProducts() {
+//   const { products } = await api("/api/products");
+//   state.products = products;
+//   state.coupons = (await api("/api/coupons")).coupons;
+//   renderCategories();
+//   renderStores();
+//   renderOffers();
+//   applyFilters();
+//   saveCart();
+// }
+
 async function loadProducts() {
-  const { products } = await api("/api/products");
-  state.products = products;
-  state.coupons = (await api("/api/coupons")).coupons;
+  state.products = [];
+  state.coupons = [];
+
   renderCategories();
   renderStores();
   renderOffers();
