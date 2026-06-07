@@ -1,0 +1,870 @@
+{
+  "users": [
+    {
+      "id": "usr_admin",
+      "name": "ShopAI Admin",
+      "email": "admin@shopai.local",
+      "phone": "+91 90000 00000",
+      "role": "admin",
+      "verified": true,
+      "otp": null,
+      "passwordHash": "470725a9adc16acb784502dd39097393:d774eace82d27cf62a8006cc0d7fac6e324b60fe706697228cbe1f8afe2f53b0713146dd2dedfa39e581542c8e7024bf097b70766bf1d0c9a055d51be734d4f6",
+      "wishlist": [],
+      "addresses": [
+        "Admin office, New Delhi"
+      ],
+      "createdAt": "2026-05-29T00:00:00.000Z"
+    },
+    {
+      "id": "usr_customer",
+      "name": "Demo Customer",
+      "email": "customer@shopai.local",
+      "phone": "+91 98888 77777",
+      "role": "customer",
+      "verified": true,
+      "otp": null,
+      "passwordHash": "fce17a45bcae77c67d925e14e9b4df58:f93a4bfb4ebdf3af7295170da9e9f8a1cf5e304973080bc4f7de66757936627643d83f9e30d6e495b18b5b70e90ccef67f573acee515e472d105fd81a320ac3d",
+      "wishlist": [
+        "prd_phone"
+      ],
+      "addresses": [
+        "Flat 42, Bengaluru, Karnataka"
+      ],
+      "createdAt": "2026-05-29T00:00:00.000Z"
+    },
+    {
+      "id": "usr_ab14f671df548b49",
+      "name": "riya choudhary",
+      "email": "riyachoudhary2106@gmail.com",
+      "phone": "8120942023",
+      "role": "customer",
+      "verified": false,
+      "otp": "123456",
+      "passwordHash": "db235733fe9c4955b75b4d3a3bbdba6b:e402e6fd73874f80f2ef9bcd6f0f81a804a0f318cf8ae9e124b57f22134be09294f5b793f0cbc86a2fb71900125b343003def1eec4c3e91d2998f6804cd5e4a8",
+      "wishlist": [],
+      "addresses": [],
+      "createdAt": "2026-05-29T06:18:10.715Z"
+    },
+    {
+      "id": "usr_817cee07f28a4fee",
+      "name": "riya choudhary",
+      "email": "choudharyriyaa26@gmail.com",
+      "phone": "8120942023",
+      "role": "customer",
+      "verified": false,
+      "otp": "123456",
+      "passwordHash": "1a5e260068d186fcc1963c071f259c49:a7e6ebe3a39772a249b407aa9a109bd197d79bab6b39883778f3bd7d61b07dea5420cadf2323d00764f438c2c7ecc87946c3f7f81bfecde81224b81483524650",
+      "wishlist": [],
+      "addresses": [],
+      "createdAt": "2026-05-29T06:19:39.720Z"
+    },
+    {
+      "id": "usr_7819b6cf5917ec92",
+      "name": "riya choudhary",
+      "email": "mahajanpalak904@gmail.com",
+      "phone": "8120942023",
+      "role": "customer",
+      "verified": true,
+      "otp": null,
+      "passwordHash": "28e25ed88ba2cf87990fd3f556da86a6:c6970e923580f9fa853a8f53fa6a62bcbcddaf64f8ba1f786f597dcc2deae5c5c8fec9a0f5c273c9484d3fb3f663dcbd2e5f9f10b2010332c7ca59d00c2077a7",
+      "wishlist": [],
+      "addresses": [],
+      "createdAt": "2026-05-29T06:40:53.519Z"
+    }
+  ],
+  "sessions": [
+    {
+      "id": "ses_ffaa2b86798e8875",
+      "userId": "usr_customer",
+      "createdAt": 1780036682390
+    },
+    {
+      "id": "ses_cd5e542e407a9a4a",
+      "userId": "usr_7819b6cf5917ec92",
+      "createdAt": 1780036857816
+    }
+  ],
+  "products": [
+    {
+      "id": "prd_phone",
+      "name": "Astra X1 5G Smartphone",
+      "category": "Electronics",
+      "price": 24999,
+      "mrp": 29999,
+      "rating": 4.7,
+      "stock": 17,
+      "source": "Amazon",
+      "sourceUrl": "https://www.amazon.in/s?k=5g+smartphone",
+      "image": "https://images.unsplash.com/photo-1598327105666-5b89351aff97?auto=format&fit=crop&w=900&q=80",
+      "description": "AMOLED display, 128GB storage, AI camera, fast charging.",
+      "tags": [
+        "mobile",
+        "phone",
+        "camera",
+        "5g"
+      ],
+      "reviews": [
+        {
+          "user": "Riya",
+          "rating": 5,
+          "text": "Battery and camera are excellent."
+        }
+      ]
+    },
+    {
+      "id": "prd_laptop",
+      "name": "Nimbus ProBook 14",
+      "category": "Electronics",
+      "price": 64990,
+      "mrp": 78990,
+      "rating": 4.6,
+      "stock": 7,
+      "source": "Flipkart",
+      "sourceUrl": "https://www.flipkart.com/search?q=laptop",
+      "image": "https://images.unsplash.com/photo-1496181133206-80ce9b88a853?auto=format&fit=crop&w=900&q=80",
+      "description": "Lightweight laptop with 16GB RAM, 512GB SSD, and all-day battery.",
+      "tags": [
+        "laptop",
+        "work",
+        "student",
+        "office"
+      ],
+      "reviews": []
+    },
+    {
+      "id": "prd_headphones",
+      "name": "PulseBeat ANC Headphones",
+      "category": "Accessories",
+      "price": 3499,
+      "mrp": 5999,
+      "rating": 4.5,
+      "stock": 36,
+      "source": "Croma",
+      "sourceUrl": "https://www.croma.com/searchB?q=headphones",
+      "image": "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&w=900&q=80",
+      "description": "Noise cancellation, 40-hour battery, deep bass.",
+      "tags": [
+        "audio",
+        "headphone",
+        "music",
+        "bluetooth"
+      ],
+      "reviews": []
+    },
+    {
+      "id": "prd_shoes",
+      "name": "StreetRun Comfort Shoes",
+      "category": "Shoes",
+      "price": 1899,
+      "mrp": 2999,
+      "rating": 4.3,
+      "stock": 41,
+      "source": "Myntra",
+      "sourceUrl": "https://www.myntra.com/sneakers",
+      "image": "https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=900&q=80",
+      "description": "Lightweight everyday sneakers with cushioned sole.",
+      "tags": [
+        "shoes",
+        "sneakers",
+        "running",
+        "fashion"
+      ],
+      "reviews": []
+    },
+    {
+      "id": "prd_jacket",
+      "name": "UrbanLayer Denim Jacket",
+      "category": "Clothes",
+      "price": 2299,
+      "mrp": 3499,
+      "rating": 4.4,
+      "stock": 22,
+      "source": "Ajio",
+      "sourceUrl": "https://www.ajio.com/search/?text=denim%20jacket",
+      "image": "https://images.unsplash.com/photo-1543076447-215ad9ba6923?auto=format&fit=crop&w=900&q=80",
+      "description": "Premium washed denim jacket for all-season styling.",
+      "tags": [
+        "clothes",
+        "jacket",
+        "denim",
+        "fashion"
+      ],
+      "reviews": []
+    },
+    {
+      "id": "prd_watch",
+      "name": "FitNova Smart Watch",
+      "category": "Accessories",
+      "price": 2799,
+      "mrp": 4499,
+      "rating": 4.2,
+      "stock": 5,
+      "source": "Flipkart",
+      "sourceUrl": "https://www.flipkart.com/search?q=smartwatch",
+      "image": "https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&fit=crop&w=900&q=80",
+      "description": "Heart-rate monitor, Bluetooth calling, and 100+ sports modes.",
+      "tags": [
+        "watch",
+        "fitness",
+        "smartwatch",
+        "health"
+      ],
+      "reviews": []
+    },
+    {
+      "id": "prd_bag",
+      "name": "Voyager Anti-Theft Backpack",
+      "category": "Accessories",
+      "price": 1299,
+      "mrp": 2299,
+      "rating": 4.1,
+      "stock": 53,
+      "source": "Amazon",
+      "sourceUrl": "https://www.amazon.in/s?k=laptop+backpack",
+      "image": "https://images.unsplash.com/photo-1553062407-98eeb64c6a62?auto=format&fit=crop&w=900&q=80",
+      "description": "Water-resistant laptop backpack with USB port.",
+      "tags": [
+        "bag",
+        "travel",
+        "laptop",
+        "backpack"
+      ],
+      "reviews": []
+    },
+    {
+      "id": "prd_saree",
+      "name": "SilkGlow Festive Saree",
+      "category": "Clothes",
+      "price": 3199,
+      "mrp": 4999,
+      "rating": 4.8,
+      "stock": 12,
+      "source": "Myntra",
+      "sourceUrl": "https://www.myntra.com/sarees",
+      "image": "https://images.unsplash.com/photo-1610030469983-98e550d6193c?auto=format&fit=crop&w=900&q=80",
+      "description": "Elegant festive saree with zari border and soft silk blend.",
+      "tags": [
+        "saree",
+        "clothes",
+        "ethnic",
+        "festival"
+      ],
+      "reviews": []
+    },
+    {
+      "id": "prd_tablet",
+      "name": "TabEdge 10.5 Learning Tablet",
+      "category": "Electronics",
+      "price": 15999,
+      "mrp": 20999,
+      "rating": 4.4,
+      "stock": 19,
+      "source": "Amazon",
+      "sourceUrl": "https://www.amazon.in/s?k=tablet",
+      "image": "https://images.unsplash.com/photo-1544244015-0df4b3ffc6b0?auto=format&fit=crop&w=900&q=80",
+      "description": "Slim tablet for classes, entertainment, notes, and video calls.",
+      "tags": [
+        "tablet",
+        "study",
+        "electronics",
+        "android"
+      ],
+      "reviews": []
+    },
+    {
+      "id": "prd_camera",
+      "name": "PixelPro Creator Camera",
+      "category": "Electronics",
+      "price": 42990,
+      "mrp": 52990,
+      "rating": 4.6,
+      "stock": 9,
+      "source": "Croma",
+      "sourceUrl": "https://www.croma.com/searchB?q=camera",
+      "image": "https://images.unsplash.com/photo-1516035069371-29a1b244cc32?auto=format&fit=crop&w=900&q=80",
+      "description": "Mirrorless-style camera kit for creators, reels, and travel photos.",
+      "tags": [
+        "camera",
+        "creator",
+        "photography",
+        "vlog"
+      ],
+      "reviews": []
+    },
+    {
+      "id": "prd_speaker",
+      "name": "BoomBox Mini Bluetooth Speaker",
+      "category": "Electronics",
+      "price": 1799,
+      "mrp": 2999,
+      "rating": 4.2,
+      "stock": 34,
+      "source": "Flipkart",
+      "sourceUrl": "https://www.flipkart.com/search?q=bluetooth%20speaker",
+      "image": "https://images.unsplash.com/photo-1608043152269-423dbba4e7e1?auto=format&fit=crop&w=900&q=80",
+      "description": "Portable speaker with punchy sound, splash resistance, and long battery.",
+      "tags": [
+        "speaker",
+        "bluetooth",
+        "music",
+        "portable"
+      ],
+      "reviews": []
+    },
+    {
+      "id": "prd_kurta",
+      "name": "CottonCraft Printed Kurta",
+      "category": "Clothes",
+      "price": 899,
+      "mrp": 1599,
+      "rating": 4.3,
+      "stock": 48,
+      "source": "Meesho",
+      "sourceUrl": "https://www.meesho.com/search?q=kurta",
+      "image": "https://images.unsplash.com/photo-1594633312681-425c7b97ccd1?auto=format&fit=crop&w=900&q=80",
+      "description": "Soft cotton kurta for daily wear and casual office styling.",
+      "tags": [
+        "kurta",
+        "cotton",
+        "clothes",
+        "ethnic"
+      ],
+      "reviews": []
+    },
+    {
+      "id": "prd_tshirt",
+      "name": "AirSoft Oversized T-Shirt",
+      "category": "Clothes",
+      "price": 699,
+      "mrp": 1299,
+      "rating": 4.1,
+      "stock": 65,
+      "source": "Ajio",
+      "sourceUrl": "https://www.ajio.com/search/?text=oversized%20tshirt",
+      "image": "https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?auto=format&fit=crop&w=900&q=80",
+      "description": "Relaxed-fit cotton tee with breathable fabric and streetwear look.",
+      "tags": [
+        "tshirt",
+        "clothes",
+        "fashion",
+        "casual"
+      ],
+      "reviews": []
+    },
+    {
+      "id": "prd_heels",
+      "name": "Elegance Block Heel Sandals",
+      "category": "Shoes",
+      "price": 1499,
+      "mrp": 2499,
+      "rating": 4.0,
+      "stock": 27,
+      "source": "Myntra",
+      "sourceUrl": "https://www.myntra.com/heels",
+      "image": "https://images.unsplash.com/photo-1543163521-1bf539c55dd2?auto=format&fit=crop&w=900&q=80",
+      "description": "Comfort block heels for parties, office events, and festive outfits.",
+      "tags": [
+        "heels",
+        "sandals",
+        "shoes",
+        "women"
+      ],
+      "reviews": []
+    },
+    {
+      "id": "prd_boots",
+      "name": "TrailMax Outdoor Boots",
+      "category": "Shoes",
+      "price": 2699,
+      "mrp": 3999,
+      "rating": 4.5,
+      "stock": 16,
+      "source": "Tata CLiQ",
+      "sourceUrl": "https://www.tatacliq.com/search/?searchCategory=all&text=boots",
+      "image": "https://images.unsplash.com/photo-1520639888713-7851133b1ed0?auto=format&fit=crop&w=900&q=80",
+      "description": "Durable outdoor boots with grippy sole and ankle support.",
+      "tags": [
+        "boots",
+        "shoes",
+        "outdoor",
+        "travel"
+      ],
+      "reviews": []
+    },
+    {
+      "id": "prd_sunglasses",
+      "name": "SunRay Polarized Sunglasses",
+      "category": "Accessories",
+      "price": 999,
+      "mrp": 1999,
+      "rating": 4.2,
+      "stock": 58,
+      "source": "Amazon",
+      "sourceUrl": "https://www.amazon.in/s?k=sunglasses",
+      "image": "https://images.unsplash.com/photo-1511499767150-a48a237f0083?auto=format&fit=crop&w=900&q=80",
+      "description": "UV-protected sunglasses with lightweight frame and travel case.",
+      "tags": [
+        "sunglasses",
+        "accessories",
+        "travel",
+        "fashion"
+      ],
+      "reviews": []
+    },
+    {
+      "id": "prd_makeup",
+      "name": "GlowKit Everyday Makeup Set",
+      "category": "Beauty",
+      "price": 1199,
+      "mrp": 2199,
+      "rating": 4.4,
+      "stock": 31,
+      "source": "Nykaa",
+      "sourceUrl": "https://www.nykaa.com/search/result/?q=makeup%20kit",
+      "image": "https://images.unsplash.com/photo-1596462502278-27bfdc403348?auto=format&fit=crop&w=900&q=80",
+      "description": "Compact makeup kit with daily shades for quick touch-ups.",
+      "tags": [
+        "makeup",
+        "beauty",
+        "cosmetics",
+        "kit"
+      ],
+      "reviews": []
+    },
+    {
+      "id": "prd_skincare",
+      "name": "HydraBloom Skin Care Combo",
+      "category": "Beauty",
+      "price": 1399,
+      "mrp": 2499,
+      "rating": 4.6,
+      "stock": 24,
+      "source": "Nykaa",
+      "sourceUrl": "https://www.nykaa.com/search/result/?q=skin%20care%20combo",
+      "image": "https://images.unsplash.com/photo-1556228720-195a672e8a03?auto=format&fit=crop&w=900&q=80",
+      "description": "Cleanser, toner, and moisturizer combo for daily skin care.",
+      "tags": [
+        "skincare",
+        "beauty",
+        "face",
+        "combo"
+      ],
+      "reviews": []
+    },
+    {
+      "id": "prd_mixer",
+      "name": "KitchenMate Mixer Grinder",
+      "category": "Home",
+      "price": 2999,
+      "mrp": 4499,
+      "rating": 4.3,
+      "stock": 18,
+      "source": "Flipkart",
+      "sourceUrl": "https://www.flipkart.com/search?q=mixer%20grinder",
+      "image": "https://images.unsplash.com/photo-1556910103-1c02745aae4d?auto=format&fit=crop&w=900&q=80",
+      "description": "Powerful mixer grinder with jars for chutney, masala, and smoothies.",
+      "tags": [
+        "home",
+        "kitchen",
+        "mixer",
+        "appliance"
+      ],
+      "reviews": []
+    },
+    {
+      "id": "prd_lamp",
+      "name": "AuraDesk LED Study Lamp",
+      "category": "Home",
+      "price": 799,
+      "mrp": 1499,
+      "rating": 4.1,
+      "stock": 44,
+      "source": "Meesho",
+      "sourceUrl": "https://www.meesho.com/search?q=study%20lamp",
+      "image": "https://images.unsplash.com/photo-1507473885765-e6ed057f782c?auto=format&fit=crop&w=900&q=80",
+      "description": "Adjustable LED desk lamp with touch control and eye comfort light.",
+      "tags": [
+        "lamp",
+        "home",
+        "study",
+        "desk"
+      ],
+      "reviews": []
+    },
+    {
+      "id": "prd_toaster",
+      "name": "ToastPro Breakfast Toaster",
+      "category": "Home",
+      "price": 1599,
+      "mrp": 2499,
+      "rating": 4.0,
+      "stock": 20,
+      "source": "Tata CLiQ",
+      "sourceUrl": "https://www.tatacliq.com/search/?searchCategory=all&text=toaster",
+      "image": "https://images.unsplash.com/photo-1622372738946-62e02505feb3?auto=format&fit=crop&w=900&q=80",
+      "description": "Two-slice toaster with browning control and removable crumb tray.",
+      "tags": [
+        "toaster",
+        "home",
+        "kitchen",
+        "breakfast"
+      ],
+      "reviews": []
+    },
+    {
+      "id": "prd_amazon_cable",
+      "name": "QuickCharge USB-C Cable",
+      "category": "Electronics",
+      "price": 199,
+      "mrp": 399,
+      "rating": 4.2,
+      "stock": 120,
+      "source": "Amazon",
+      "sourceUrl": "https://www.amazon.in/s?k=usb+c+cable",
+      "image": "https://images.unsplash.com/photo-1583863788434-e58a36330cf0?auto=format&fit=crop&w=900&q=80",
+      "description": "Affordable braided USB-C cable for charging and data transfer.",
+      "tags": [
+        "budget",
+        "cable",
+        "charger",
+        "electronics"
+      ],
+      "reviews": []
+    },
+    {
+      "id": "prd_flipkart_cover",
+      "name": "FlexiGrip Phone Cover",
+      "category": "Accessories",
+      "price": 149,
+      "mrp": 299,
+      "rating": 4.0,
+      "stock": 95,
+      "source": "Flipkart",
+      "sourceUrl": "https://www.flipkart.com/search?q=phone%20cover",
+      "image": "https://images.unsplash.com/photo-1601593346740-925612772716?auto=format&fit=crop&w=900&q=80",
+      "description": "Low-cost shock-absorbing phone cover with a soft matte finish.",
+      "tags": [
+        "budget",
+        "phone",
+        "cover",
+        "accessories"
+      ],
+      "reviews": []
+    },
+    {
+      "id": "prd_croma_adapter",
+      "name": "MiniWall Fast Charger Adapter",
+      "category": "Electronics",
+      "price": 399,
+      "mrp": 799,
+      "rating": 4.1,
+      "stock": 74,
+      "source": "Croma",
+      "sourceUrl": "https://www.croma.com/searchB?q=charger%20adapter",
+      "image": "https://images.unsplash.com/photo-1586816879360-004f5b0c51e3?auto=format&fit=crop&w=900&q=80",
+      "description": "Compact charger adapter for daily phone charging.",
+      "tags": [
+        "budget",
+        "charger",
+        "adapter",
+        "electronics"
+      ],
+      "reviews": []
+    },
+    {
+      "id": "prd_myntra_socks",
+      "name": "ComfyFit Ankle Socks Pack",
+      "category": "Clothes",
+      "price": 249,
+      "mrp": 499,
+      "rating": 4.3,
+      "stock": 110,
+      "source": "Myntra",
+      "sourceUrl": "https://www.myntra.com/socks",
+      "image": "https://images.unsplash.com/photo-1586350977771-b3b0abd50c82?auto=format&fit=crop&w=900&q=80",
+      "description": "Soft ankle socks pack for sports, office, and daily wear.",
+      "tags": [
+        "budget",
+        "socks",
+        "clothes",
+        "fashion"
+      ],
+      "reviews": []
+    },
+    {
+      "id": "prd_ajio_cap",
+      "name": "StreetLite Cotton Cap",
+      "category": "Accessories",
+      "price": 299,
+      "mrp": 599,
+      "rating": 4.0,
+      "stock": 88,
+      "source": "Ajio",
+      "sourceUrl": "https://www.ajio.com/search/?text=cap",
+      "image": "https://images.unsplash.com/photo-1521369909029-2afed882baee?auto=format&fit=crop&w=900&q=80",
+      "description": "Budget cotton cap with adjustable strap and casual streetwear style.",
+      "tags": [
+        "budget",
+        "cap",
+        "accessories",
+        "fashion"
+      ],
+      "reviews": []
+    },
+    {
+      "id": "prd_meesho_earrings",
+      "name": "Everyday Hoop Earrings",
+      "category": "Accessories",
+      "price": 129,
+      "mrp": 299,
+      "rating": 4.1,
+      "stock": 140,
+      "source": "Meesho",
+      "sourceUrl": "https://www.meesho.com/search?q=earrings",
+      "image": "https://images.unsplash.com/photo-1535632787350-4e68ef0ac584?auto=format&fit=crop&w=900&q=80",
+      "description": "Lightweight hoop earrings for daily outfits and gifting.",
+      "tags": [
+        "budget",
+        "earrings",
+        "jewellery",
+        "accessories"
+      ],
+      "reviews": []
+    },
+    {
+      "id": "prd_tatacliq_bottle",
+      "name": "HydroGo Water Bottle",
+      "category": "Home",
+      "price": 349,
+      "mrp": 699,
+      "rating": 4.2,
+      "stock": 62,
+      "source": "Tata CLiQ",
+      "sourceUrl": "https://www.tatacliq.com/search/?searchCategory=all&text=water%20bottle",
+      "image": "https://images.unsplash.com/photo-1602143407151-7111542de6e8?auto=format&fit=crop&w=900&q=80",
+      "description": "Leak-resistant bottle for school, gym, office, and travel.",
+      "tags": [
+        "budget",
+        "bottle",
+        "home",
+        "travel"
+      ],
+      "reviews": []
+    },
+    {
+      "id": "prd_nykaa_lipbalm",
+      "name": "SoftTint Lip Balm",
+      "category": "Beauty",
+      "price": 199,
+      "mrp": 349,
+      "rating": 4.4,
+      "stock": 105,
+      "source": "Nykaa",
+      "sourceUrl": "https://www.nykaa.com/search/result/?q=lip%20balm",
+      "image": "https://images.unsplash.com/photo-1599305090598-fe179d501227?auto=format&fit=crop&w=900&q=80",
+      "description": "Pocket-friendly tinted lip balm with moisturizing finish.",
+      "tags": [
+        "budget",
+        "lip balm",
+        "beauty",
+        "skincare"
+      ],
+      "reviews": []
+    }
+  ],
+  "orders": [
+    {
+      "id": "ord_demo",
+      "userId": "usr_customer",
+      "items": [
+        {
+          "productId": "prd_headphones",
+          "name": "PulseBeat ANC Headphones",
+          "price": 3499,
+          "qty": 1
+        }
+      ],
+      "subtotal": 3499,
+      "discount": 350,
+      "shipping": 0,
+      "total": 3149,
+      "paymentMethod": "UPI",
+      "deliveryMode": "express",
+      "address": "Flat 42, Bengaluru, Karnataka",
+      "status": "Out for delivery",
+      "eta": "2026-05-31",
+      "tracking": [
+        "Order placed",
+        "Packed",
+        "Shipped",
+        "Out for delivery"
+      ],
+      "gps": {
+        "lat": 12.9716,
+        "lng": 77.5946
+      },
+      "createdAt": "2026-05-29T00:00:00.000Z"
+    },
+    {
+      "id": "ord_3e2cda4a2434fddc",
+      "userId": "usr_customer",
+      "items": [
+        {
+          "productId": "prd_phone",
+          "name": "Astra X1 5G Smartphone",
+          "price": 24999,
+          "qty": 1
+        }
+      ],
+      "subtotal": 24999,
+      "discount": 0,
+      "shipping": 0,
+      "total": 24999,
+      "paymentMethod": "UPI",
+      "deliveryMode": "standard",
+      "address": "Flat 42, Bengaluru, Karnataka",
+      "status": "Packed",
+      "eta": "2026-06-03",
+      "tracking": [
+        "Order placed",
+        "Packed"
+      ],
+      "gps": {
+        "lat": 28.6139,
+        "lng": 77.209
+      },
+      "createdAt": "2026-05-29T06:24:01.400Z"
+    }
+  ],
+  "refunds": [
+    {
+      "id": "ref_demo",
+      "orderId": "ord_demo",
+      "userId": "usr_customer",
+      "reason": "Size issue",
+      "option": "exchange",
+      "status": "Pickup scheduled",
+      "timeline": [
+        "Request submitted",
+        "Approved",
+        "Pickup scheduled"
+      ],
+      "createdAt": "2026-05-29T00:00:00.000Z"
+    },
+    {
+      "id": "ref_7d1dfc7fcdf32c10",
+      "orderId": "ord_demo",
+      "userId": "usr_customer",
+      "reason": "Damaged product",
+      "option": "refund",
+      "status": "Requested",
+      "timeline": [
+        "Request submitted",
+        "Pickup verification pending"
+      ],
+      "createdAt": "2026-05-29T06:24:20.378Z"
+    }
+  ],
+  "payments": [
+    {
+      "id": "pay_eb1effdc54e82caa",
+      "orderId": "ord_3e2cda4a2434fddc",
+      "method": "UPI",
+      "amount": 24999,
+      "status": "Paid"
+    }
+  ],
+  "chats": [
+    {
+      "id": "chat_2db5a91acb565630",
+      "userId": "guest",
+      "message": "delivery charges",
+      "answer": "Login and open Orders to track live shipment stages, GPS simulation, and delivery ETA.",
+      "createdAt": "2026-05-29T06:08:37.549Z"
+    },
+    {
+      "id": "chat_f3bf842653df9881",
+      "userId": "guest",
+      "message": "delivery charges",
+      "answer": "Delivery charges: below ₹499 = ₹50, ₹500-₹999 = ₹20, above ₹1000 = free. Express and same-day delivery are available at checkout.",
+      "createdAt": "2026-05-29T06:09:37.892Z"
+    },
+    {
+      "id": "chat_e2a2aa5b3e2c13d8",
+      "userId": "usr_customer",
+      "message": "Recommend products",
+      "answer": "Hi, I can help you find products, track orders, explain refunds, calculate delivery charges, solve payment issues, and create support tickets.",
+      "createdAt": "2026-05-29T06:25:29.525Z"
+    },
+    {
+      "id": "chat_417e17f6c6d05475",
+      "userId": "usr_customer",
+      "message": "Recommend products",
+      "answer": "Hi, I can help you find products, track orders, explain refunds, calculate delivery charges, solve payment issues, and create support tickets.",
+      "createdAt": "2026-05-29T06:25:37.283Z"
+    },
+    {
+      "id": "chat_9401351ae69e438a",
+      "userId": "usr_customer",
+      "message": "Track order",
+      "answer": "Your latest order ord_3e2cda4a2434fddc is Packed. Estimated delivery: 2026-06-03.",
+      "createdAt": "2026-05-29T06:25:42.133Z"
+    },
+    {
+      "id": "chat_dbaa18d8dc96bf3f",
+      "userId": "usr_customer",
+      "message": "Delivery charges",
+      "answer": "Delivery charges: below ₹499 = ₹50, ₹500-₹999 = ₹20, above ₹1000 = free. Express and same-day delivery are available at checkout.",
+      "createdAt": "2026-05-29T06:28:18.151Z"
+    }
+  ],
+  "tickets": [
+    {
+      "id": "tkt_demo",
+      "userId": "usr_customer",
+      "subject": "Payment confirmation",
+      "status": "Open",
+      "priority": "Medium"
+    }
+  ],
+  "coupons": [
+    {
+      "code": "SAVE20",
+      "label": "Mega Offer",
+      "description": "20% off on orders above ₹999",
+      "type": "percent",
+      "discount": 0.2,
+      "minCart": 999,
+      "active": true
+    },
+    {
+      "code": "BUDGET50",
+      "label": "Budget Picks",
+      "description": "Flat ₹50 off on low-price products",
+      "type": "fixed",
+      "amount": 50,
+      "discount": 0,
+      "minCart": 299,
+      "active": true
+    },
+    {
+      "code": "FREESHIP",
+      "label": "Delivery Deal",
+      "description": "Free standard delivery above ₹499",
+      "type": "percent",
+      "discount": 0,
+      "freeShipping": true,
+      "minCart": 499,
+      "active": true
+    },
+    {
+      "code": "BEAUTY15",
+      "label": "Beauty Sale",
+      "description": "15% off beauty and personal care",
+      "type": "percent",
+      "discount": 0.15,
+      "minCart": 599,
+      "active": true
+    }
+  ]
+}
